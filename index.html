@@ -1,0 +1,2837 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AXVEL — Ride Beyond Limits | Performance Bicycles</title>
+    <meta
+      name="description"
+      content="AXVEL crafts wind-tunnel engineered carbon road, gravel, mountain, and electric bicycles. Ride Beyond Limits."
+    />
+    <meta
+      property="og:title"
+      content="AXVEL — Ride Beyond Limits | Performance Bicycles"
+    />
+    <meta
+      property="og:description"
+      content="Wind-tunnel engineered carbon road, gravel, mountain, and electric bicycles."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B1020'/%3E%3Ccircle cx='20' cy='40' r='10' fill='none' stroke='%23FF6B2C' stroke-width='3.5'/%3E%3Ccircle cx='46' cy='40' r='10' fill='none' stroke='%23F6F1E7' stroke-width='3.5'/%3E%3Cpath d='M20 40 L29 24 L43 24 L33 40 Z M43 24 L46 40' fill='none' stroke='%23FF6B2C' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <svg width="0" height="0" class="sr-svg-defs" aria-hidden="true">
+      <defs>
+        <linearGradient
+          id="axvelAccentGrad"
+          x1="0%"
+          y1="0%"
+          x2="100%"
+          y2="100%"
+        >
+          <stop offset="0%" stop-color="#FF6B2C" />
+          <stop offset="100%" stop-color="#FFB36B" />
+        </linearGradient>
+        <linearGradient id="axvelRimGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#F6F1E7" stop-opacity="0.9" />
+          <stop offset="50%" stop-color="#7FD6FF" stop-opacity="0.7" />
+          <stop offset="100%" stop-color="#FF6B2C" stop-opacity="0.9" />
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+    <div
+      class="preloader"
+      id="preloader"
+      role="status"
+      aria-label="Loading AXVEL experience"
+    >
+      <div class="preloader-panel preloader-top"></div>
+      <div class="preloader-panel preloader-bottom"></div>
+      <div class="preloader-content">
+        <div class="preloader-wheel-wrap">
+          <svg class="preloader-wheel" viewBox="0 0 120 120" aria-hidden="true">
+            <circle
+              cx="60"
+              cy="60"
+              r="52"
+              fill="none"
+              stroke="rgba(246,241,231,0.14)"
+              stroke-width="6"
+            />
+            <circle
+              cx="60"
+              cy="60"
+              r="52"
+              fill="none"
+              stroke="url(#axvelAccentGrad)"
+              stroke-width="6"
+              stroke-dasharray="110 220"
+              stroke-linecap="round"
+            />
+            <circle
+              cx="60"
+              cy="60"
+              r="42"
+              fill="none"
+              stroke="rgba(246,241,231,0.25)"
+              stroke-width="1.5"
+              stroke-dasharray="6 8"
+            />
+            <g stroke="rgba(246,241,231,0.3)" stroke-width="1.2">
+              <line x1="60" y1="8" x2="60" y2="112" />
+              <line x1="8" y1="60" x2="112" y2="60" />
+              <line x1="23" y1="23" x2="97" y2="97" />
+              <line x1="97" y1="23" x2="23" y2="97" />
+            </g>
+            <circle
+              cx="60"
+              cy="60"
+              r="9"
+              fill="#0B1020"
+              stroke="#FF6B2C"
+              stroke-width="3"
+            />
+          </svg>
+        </div>
+        <div class="preloader-word" aria-hidden="true">
+          <span style="--i: 0">A</span>
+          <span style="--i: 1">X</span>
+          <span style="--i: 2">V</span>
+          <span style="--i: 3">E</span>
+          <span style="--i: 4">L</span>
+        </div>
+        <div class="preloader-meta">
+          <span class="mono-label">WIND-TUNNEL CALIBRATION</span>
+          <span class="preloader-counter"
+            ><strong id="preloader-count">0</strong>%</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header" id="site-header">
+      <nav class="nav-pill" aria-label="Primary Navigation">
+        <a href="#hero" class="brand-logo" aria-label="AXVEL Home">
+          <svg class="brand-mark" viewBox="0 0 36 24" aria-hidden="true">
+            <circle
+              cx="8"
+              cy="16"
+              r="6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+            />
+            <circle
+              cx="28"
+              cy="16"
+              r="6"
+              fill="none"
+              stroke="#FF6B2C"
+              stroke-width="2.2"
+            />
+            <path
+              d="M8 16 L15 6 L26 6 L18 16 Z M26 6 L28 16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <span class="brand-text">AXVEL</span>
+        </a>
+
+        <ul class="nav-links">
+          <li>
+            <a href="#bikes" class="nav-link"
+              ><span data-text="Bikes">Bikes</span></a
+            >
+          </li>
+          <li>
+            <a href="#tech" class="nav-link"
+              ><span data-text="Tech">Tech</span></a
+            >
+          </li>
+          <li>
+            <a href="#build" class="nav-link"
+              ><span data-text="Build">Build</span></a
+            >
+          </li>
+          <li>
+            <a href="#stories" class="nav-link"
+              ><span data-text="Stories">Stories</span></a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="nav-link"
+              ><span data-text="Contact">Contact</span></a
+            >
+          </li>
+        </ul>
+
+        <div class="nav-actions">
+          <button
+            type="button"
+            class="icon-btn wishlist-nav-btn"
+            id="wishlist-filter-btn"
+            aria-label="Filter by saved wishlist bikes"
+            title="View Wishlist"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+              />
+            </svg>
+            <span class="badge-count" id="wishlist-badge">0</span>
+          </button>
+
+          <button
+            type="button"
+            class="cart-trigger-btn"
+            id="cart-open-btn"
+            aria-label="Open shopping cart"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <path d="M16 10a4 4 0 0 1-8 0" />
+            </svg>
+            <span class="cart-btn-text">Bag</span>
+            <span class="badge-count accent" id="cart-badge">0</span>
+          </button>
+
+          <button
+            type="button"
+            class="burger-btn"
+            id="burger-btn"
+            aria-label="Toggle Menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <div class="mobile-menu-inner">
+        <p class="mono-label">NAVIGATION // AXVEL</p>
+        <ul class="mobile-nav-list">
+          <li style="--m: 0">
+            <a href="#categories" class="mobile-nav-link">01. Disciplines</a>
+          </li>
+          <li style="--m: 1">
+            <a href="#bikes" class="mobile-nav-link">02. All Bicycles</a>
+          </li>
+          <li style="--m: 2">
+            <a href="#tech" class="mobile-nav-link">03. Engineering</a>
+          </li>
+          <li style="--m: 3">
+            <a href="#build" class="mobile-nav-link">04. Custom Builder</a>
+          </li>
+          <li style="--m: 4">
+            <a href="#stories" class="mobile-nav-link">05. Journal</a>
+          </li>
+          <li style="--m: 5">
+            <a href="#contact" class="mobile-nav-link">06. Contact</a>
+          </li>
+        </ul>
+        <div class="mobile-menu-footer">
+          <span>BERLIN · CORTINA · BOULDER · TOKYO</span>
+          <span>RIDE BEYOND LIMITS</span>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="hero" id="hero" aria-label="AXVEL Flagship Introduction">
+        <div class="aurora-blob blob-1" aria-hidden="true"></div>
+        <div class="aurora-blob blob-2" aria-hidden="true"></div>
+        <div class="hero-bg-word" aria-hidden="true">AXVEL</div>
+
+        <div class="hero-main-grid">
+          <div class="hero-copy">
+            <div class="hero-kicker">
+              <span class="mono-label"
+                >SERIES 06 · MONOCOQUE CARBON T1100G</span
+              >
+            </div>
+
+            <h1 class="hero-headline">
+              <span class="line-mask"
+                ><span class="line-inner solid-line" style="--d: 0.08s"
+                  >RIDE</span
+                ></span
+              >
+              <span class="line-mask"
+                ><span class="line-inner outline-line" style="--d: 0.18s"
+                  >BEYOND</span
+                ></span
+              >
+              <span class="line-mask"
+                ><span class="line-inner grad-line" style="--d: 0.28s"
+                  >LIMITS.</span
+                ></span
+              >
+            </h1>
+
+            <p class="hero-desc">
+              Sculpted in our Dolomites aero tunnel. Sub-6.8kg aerospace carbon
+              frames engineered for riders who treat gradients and headwinds as
+              invitations.
+            </p>
+
+            <div class="hero-cta-row">
+              <a href="#bikes" class="btn-primary">
+                <span>Explore Bikes</span>
+                <svg
+                  viewBox="0 0 24 24"
+                  width="18"
+                  height="18"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  aria-hidden="true"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </a>
+              <button type="button" class="btn-ghost" id="hero-watch-btn">
+                <span class="play-ring" aria-hidden="true">▶</span>
+                <span>Watch Film</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-visual-stage" id="hero-tilt">
+            <div class="orbit-badge" aria-hidden="true">
+              <svg viewBox="0 0 160 160" width="128" height="128">
+                <defs>
+                  <path
+                    id="orbitTextPath"
+                    d="M 80,80 m -62,0 a 62,62 0 1,1 124,0 a 62,62 0 1,1 -124,0"
+                  />
+                </defs>
+                <text
+                  fill="#F6F1E7"
+                  font-family="JetBrains Mono, monospace"
+                  font-size="10.2"
+                  letter-spacing="3.1"
+                >
+                  <textPath href="#orbitTextPath">
+                    RIDE BEYOND LIMITS • AXVEL WORKS •
+                  </textPath>
+                </text>
+                <circle
+                  cx="80"
+                  cy="80"
+                  r="22"
+                  fill="rgba(255,107,44,0.18)"
+                  stroke="#FF6B2C"
+                  stroke-width="1.2"
+                />
+                <path
+                  d="M74 80 L86 80 M80 74 L86 80 L80 86"
+                  fill="none"
+                  stroke="#F6F1E7"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+
+            <div class="hero-photo-arch">
+              <img
+                src=""
+                alt="AXVEL Aero RX Carbon road bicycle in dramatic studio lighting"
+                class="hero-photo"
+                referrerpolicy="no-referrer"
+                onerror="
+                  this.onerror = null;
+                  this.style.opacity = '0';
+                "
+              />
+              <div class="arch-gradient-overlay"></div>
+            </div>
+
+            <div class="hero-svg-bike-wrap" aria-hidden="true">
+              <svg class="animated-bike-svg" viewBox="0 0 640 380" fill="none">
+                <line
+                  x1="40"
+                  y1="342"
+                  x2="600"
+                  y2="342"
+                  stroke="rgba(246,241,231,0.2)"
+                  stroke-width="1.5"
+                  stroke-dasharray="16 10"
+                  class="wind-line"
+                />
+                <line
+                  x1="110"
+                  y1="354"
+                  x2="520"
+                  y2="354"
+                  stroke="rgba(255,107,44,0.35)"
+                  stroke-width="1.5"
+                  stroke-dasharray="40 24"
+                  class="wind-line-fast"
+                />
+
+                <g class="wheel-spin" style="transform-origin: 150px 240px">
+                  <circle
+                    cx="150"
+                    cy="240"
+                    r="96"
+                    stroke="#F6F1E7"
+                    stroke-width="9"
+                    stroke-opacity="0.92"
+                  />
+                  <circle
+                    cx="150"
+                    cy="240"
+                    r="82"
+                    stroke="url(#axvelRimGrad)"
+                    stroke-width="12"
+                    stroke-opacity="0.35"
+                  />
+                  <circle
+                    cx="150"
+                    cy="240"
+                    r="75"
+                    stroke="#FF6B2C"
+                    stroke-width="1.5"
+                    stroke-dasharray="18 12"
+                  />
+                  <g stroke="rgba(246,241,231,0.42)" stroke-width="1.4">
+                    <line x1="150" y1="144" x2="150" y2="336" />
+                    <line x1="54" y1="240" x2="246" y2="240" />
+                    <line x1="82" y1="172" x2="218" y2="308" />
+                    <line x1="218" y1="172" x2="82" y2="308" />
+                  </g>
+                  <circle
+                    cx="150"
+                    cy="240"
+                    r="22"
+                    stroke="#7FD6FF"
+                    stroke-width="2"
+                    stroke-dasharray="6 4"
+                  />
+                </g>
+
+                <g class="wheel-spin" style="transform-origin: 490px 240px">
+                  <circle
+                    cx="490"
+                    cy="240"
+                    r="96"
+                    stroke="#F6F1E7"
+                    stroke-width="9"
+                    stroke-opacity="0.92"
+                  />
+                  <circle
+                    cx="490"
+                    cy="240"
+                    r="82"
+                    stroke="url(#axvelRimGrad)"
+                    stroke-width="12"
+                    stroke-opacity="0.35"
+                  />
+                  <circle
+                    cx="490"
+                    cy="240"
+                    r="75"
+                    stroke="#FF6B2C"
+                    stroke-width="1.5"
+                    stroke-dasharray="18 12"
+                  />
+                  <g stroke="rgba(246,241,231,0.42)" stroke-width="1.4">
+                    <line x1="490" y1="144" x2="490" y2="336" />
+                    <line x1="394" y1="240" x2="586" y2="240" />
+                    <line x1="422" y1="172" x2="558" y2="308" />
+                    <line x1="558" y1="172" x2="422" y2="308" />
+                  </g>
+                  <circle
+                    cx="490"
+                    cy="240"
+                    r="22"
+                    stroke="#7FD6FF"
+                    stroke-width="2"
+                    stroke-dasharray="6 4"
+                  />
+                </g>
+
+                <path
+                  d="M150 226 L285 220 A24 24 0 1 1 285 268 L150 254 A14 14 0 1 1 150 226 Z"
+                  stroke="#FFB36B"
+                  stroke-width="2.5"
+                  stroke-dasharray="8 5"
+                  class="chain-motion"
+                />
+                <path
+                  class="bike-draw-stroke"
+                  d="M150 240 L236 142 L428 122 L285 244 Z"
+                  stroke="url(#axvelAccentGrad)"
+                  stroke-width="10"
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+                />
+                <path
+                  class="bike-draw-stroke"
+                  d="M150 240 L285 244 L242 96"
+                  stroke="#F6F1E7"
+                  stroke-width="9"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  class="bike-draw-stroke"
+                  d="M418 102 L490 240"
+                  stroke="#FF6B2C"
+                  stroke-width="9"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M210 92 L262 92 C272 92 276 84 260 82 L222 82 C206 82 202 92 210 92 Z"
+                  fill="#F6F1E7"
+                />
+                <path
+                  d="M412 102 L448 92 C474 92 482 118 462 132 C450 140 438 136 436 128"
+                  stroke="#F6F1E7"
+                  stroke-width="7.5"
+                  stroke-linecap="round"
+                  fill="none"
+                />
+
+                <g class="wheel-spin" style="transform-origin: 285px 244px">
+                  <circle
+                    cx="285"
+                    cy="244"
+                    r="24"
+                    stroke="#F6F1E7"
+                    stroke-width="3.5"
+                    fill="rgba(11,16,32,0.8)"
+                  />
+                  <line
+                    x1="285"
+                    y1="244"
+                    x2="314"
+                    y2="262"
+                    stroke="#FF6B2C"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                  />
+                  <rect
+                    x="306"
+                    y="258"
+                    width="18"
+                    height="6"
+                    rx="3"
+                    fill="#F6F1E7"
+                  />
+                </g>
+                <circle cx="150" cy="240" r="8" fill="#FF6B2C" />
+                <circle cx="490" cy="240" r="8" fill="#FF6B2C" />
+              </svg>
+            </div>
+
+            <div class="spec-chip chip-1">
+              <span class="chip-label">FRAME WEIGHT</span>
+              <strong class="chip-val">6.8 KG</strong>
+            </div>
+            <div class="spec-chip chip-2">
+              <span class="chip-label">LAYUP GRADE</span>
+              <strong class="chip-val">CARBON T1100</strong>
+            </div>
+            <div class="spec-chip chip-3">
+              <span class="chip-label">TRANSMISSION</span>
+              <strong class="chip-val">12-SPEED DI2</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-bottom-bar">
+          <div class="hero-stats-grid">
+            <div class="hero-stat-item">
+              <span class="stat-num" data-count="2012">2012</span>
+              <span class="stat-caption">Founded in Dolomites</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="stat-num"><span data-count="48">48</span></span>
+              <span class="stat-caption">Countries Racing</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="stat-num"><span data-count="120">120</span>K</span>
+              <span class="stat-caption">Global Riders</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="stat-num"><span data-count="3">3</span> YRS</span>
+              <span class="stat-caption">Crash Warranty</span>
+            </div>
+          </div>
+
+          <div class="hero-marquee" aria-label="AXVEL Disciplines">
+            <div class="marquee-track">
+              <div class="marquee-group">
+                <span
+                  >ROAD • GRAVEL • MOUNTAIN • ELECTRIC • KIDS • WIND-TUNNEL AERO
+                  • MONOCOQUE T1100 • CERAMIC SPEED •
+                </span>
+                <span
+                  >ROAD • GRAVEL • MOUNTAIN • ELECTRIC • KIDS • WIND-TUNNEL AERO
+                  • MONOCOQUE T1100 • CERAMIC SPEED •
+                </span>
+                <span
+                  >ROAD • GRAVEL • MOUNTAIN • ELECTRIC • KIDS • WIND-TUNNEL AERO
+                  • MONOCOQUE T1100 • CERAMIC SPEED •
+                </span>
+              </div>
+              <div class="marquee-group" aria-hidden="true">
+                <span
+                  >ROAD • GRAVEL • MOUNTAIN • ELECTRIC • KIDS • WIND-TUNNEL AERO
+                  • MONOCOQUE T1100 • CERAMIC SPEED •
+                </span>
+                <span
+                  >ROAD • GRAVEL • MOUNTAIN • ELECTRIC • KIDS • WIND-TUNNEL AERO
+                  • MONOCOQUE T1100 • CERAMIC SPEED •
+                </span>
+                <span
+                  >ROAD • GRAVEL • MOUNTAIN • ELECTRIC • KIDS • WIND-TUNNEL AERO
+                  • MONOCOQUE T1100 • CERAMIC SPEED •
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section-cream categories-section reveal"
+        id="categories"
+        aria-labelledby="cat-heading"
+      >
+        <div class="container">
+          <div class="section-head split-head">
+            <div>
+              <p class="mono-label dark-mono">01 / FIVE DISCIPLINES</p>
+              <h2 class="section-title dark-title" id="cat-heading">
+                ENGINEERED <span class="stroke-dark">TERRAIN.</span>
+              </h2>
+            </div>
+            <p class="section-sub dark-sub">
+              Select a discipline to filter our 32-model performance fleet.
+              Every geometry is tuned for power transfer and compliance.
+            </p>
+          </div>
+
+          <div class="categories-grid">
+            <article
+              class="cat-card"
+              data-cat-select="Road"
+              tabindex="0"
+              role="button"
+              aria-label="Filter Road bicycles, 8 models"
+            >
+              <div class="cat-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1200&q=80"
+                  alt="Road racing cyclists in aero formation"
+                  loading="lazy"
+                  decoding="async"
+                  referrerpolicy="no-referrer"
+                  onerror="
+                    this.onerror = null;
+                    this.style.opacity = '0';
+                  "
+                />
+              </div>
+              <div class="cat-overlay">
+                <span class="cat-index">01</span>
+                <div class="cat-bottom">
+                  <span class="cat-count"
+                    >0<span data-count="8">8</span> MODELS</span
+                  >
+                  <h3 class="cat-name">Road</h3>
+                  <div class="cat-arrow-row">
+                    <span>Aero &amp; Grand Tour</span>
+                    <span class="cat-arrow">↗</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="cat-card"
+              data-cat-select="Gravel"
+              tabindex="0"
+              role="button"
+              aria-label="Filter Gravel bicycles, 7 models"
+            >
+              <div class="cat-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1541625602330-2277a4c46182?auto=format&fit=crop&w=1200&q=80"
+                  alt="Gravel bike riding across alpine dirt pass"
+                  loading="lazy"
+                  decoding="async"
+                  referrerpolicy="no-referrer"
+                  onerror="
+                    this.onerror = null;
+                    this.style.opacity = '0';
+                  "
+                />
+              </div>
+              <div class="cat-overlay">
+                <span class="cat-index">02</span>
+                <div class="cat-bottom">
+                  <span class="cat-count"
+                    >0<span data-count="7">7</span> MODELS</span
+                  >
+                  <h3 class="cat-name">Gravel</h3>
+                  <div class="cat-arrow-row">
+                    <span>All-Road &amp; Backcountry</span>
+                    <span class="cat-arrow">↗</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="cat-card"
+              data-cat-select="Mountain"
+              tabindex="0"
+              role="button"
+              aria-label="Filter Mountain bicycles, 7 models"
+            >
+              <div class="cat-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1544191696-102dbdaeeaa0?auto=format&fit=crop&w=1200&q=80"
+                  alt="Mountain bike descending technical rocky trail"
+                  loading="lazy"
+                  decoding="async"
+                  referrerpolicy="no-referrer"
+                  onerror="
+                    this.onerror = null;
+                    this.style.opacity = '0';
+                  "
+                />
+              </div>
+              <div class="cat-overlay">
+                <span class="cat-index">03</span>
+                <div class="cat-bottom">
+                  <span class="cat-count"
+                    >0<span data-count="7">7</span> MODELS</span
+                  >
+                  <h3 class="cat-name">Mountain</h3>
+                  <div class="cat-arrow-row">
+                    <span>Enduro &amp; XC Downcountry</span>
+                    <span class="cat-arrow">↗</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="cat-card"
+              data-cat-select="Electric"
+              tabindex="0"
+              role="button"
+              aria-label="Filter Electric bicycles, 6 models"
+            >
+              <div class="cat-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=1200&q=80"
+                  alt="Sleek carbon electric performance bicycle"
+                  loading="lazy"
+                  decoding="async"
+                  referrerpolicy="no-referrer"
+                  onerror="
+                    this.onerror = null;
+                    this.style.opacity = '0';
+                  "
+                />
+              </div>
+              <div class="cat-overlay">
+                <span class="cat-index">04</span>
+                <div class="cat-bottom">
+                  <span class="cat-count"
+                    >0<span data-count="6">6</span> MODELS</span
+                  >
+                  <h3 class="cat-name">Electric</h3>
+                  <div class="cat-arrow-row">
+                    <span>Stealth Torque Assist</span>
+                    <span class="cat-arrow">↗</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="cat-card"
+              data-cat-select="Kids"
+              tabindex="0"
+              role="button"
+              aria-label="Filter Kids bicycles, 4 models"
+            >
+              <div class="cat-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=1200&q=80"
+                  alt="Lightweight youth racing bicycle"
+                  loading="lazy"
+                  decoding="async"
+                  referrerpolicy="no-referrer"
+                  onerror="
+                    this.onerror = null;
+                    this.style.opacity = '0';
+                  "
+                />
+              </div>
+              <div class="cat-overlay">
+                <span class="cat-index">05</span>
+                <div class="cat-bottom">
+                  <span class="cat-count"
+                    >0<span data-count="4">4</span> MODELS</span
+                  >
+                  <h3 class="cat-name">Kids</h3>
+                  <div class="cat-arrow-row">
+                    <span>Junior Pro Carbon</span>
+                    <span class="cat-arrow">↗</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section-ink showcase-section reveal"
+        id="bikes"
+        aria-labelledby="showcase-heading"
+      >
+        <div class="container">
+          <div class="section-head split-head">
+            <div>
+              <p class="mono-label">02 / 2026 COMPLETE FLEET</p>
+              <h2 class="section-title" id="showcase-heading">
+                THE <span class="stroke-light">MACHINES.</span>
+              </h2>
+            </div>
+            <div class="fleet-summary">
+              <span class="mono-label" id="bike-count-label"
+                >SHOWING 12 OF 32 MODELS</span
+              >
+            </div>
+          </div>
+
+          <div class="showcase-toolbar">
+            <div
+              class="filter-pills"
+              role="tablist"
+              aria-label="Filter bicycles by category"
+            >
+              <button
+                type="button"
+                class="filter-btn active"
+                data-filter="All"
+                role="tab"
+                aria-selected="true"
+              >
+                All (32)
+              </button>
+              <button
+                type="button"
+                class="filter-btn"
+                data-filter="Road"
+                role="tab"
+                aria-selected="false"
+              >
+                Road
+              </button>
+              <button
+                type="button"
+                class="filter-btn"
+                data-filter="Gravel"
+                role="tab"
+                aria-selected="false"
+              >
+                Gravel
+              </button>
+              <button
+                type="button"
+                class="filter-btn"
+                data-filter="Mountain"
+                role="tab"
+                aria-selected="false"
+              >
+                Mountain
+              </button>
+              <button
+                type="button"
+                class="filter-btn"
+                data-filter="Electric"
+                role="tab"
+                aria-selected="false"
+              >
+                Electric
+              </button>
+              <button
+                type="button"
+                class="filter-btn"
+                data-filter="Kids"
+                role="tab"
+                aria-selected="false"
+              >
+                Kids
+              </button>
+            </div>
+
+            <div class="search-sort-group">
+              <div class="search-box">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="16"
+                  height="16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+                <input
+                  type="search"
+                  id="bike-search"
+                  placeholder="Search model (e.g. Aero, Falcon)..."
+                  aria-label="Search bicycles by name"
+                />
+              </div>
+
+              <div class="sort-box">
+                <label for="bike-sort" class="sr-only">Sort bicycles by</label>
+                <select id="bike-sort" aria-label="Sort bicycles">
+                  <option value="featured">Sort: Featured</option>
+                  <option value="price-asc">Price: Low → High</option>
+                  <option value="price-desc">Price: High → Low</option>
+                  <option value="rating">Top Rated</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-grid" id="product-grid" aria-live="polite"></div>
+
+          <div class="showcase-footer">
+            <button type="button" class="btn-primary" id="load-more-btn">
+              <span>Load More Bikes</span>
+              <span class="mono-tag" id="load-more-count">+20</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section-ink2 tech-section reveal"
+        id="tech"
+        aria-labelledby="tech-heading"
+      >
+        <div class="container">
+          <div class="tech-split">
+            <div class="tech-left">
+              <p class="mono-label">03 / AEROSPACE ARCHITECTURE</p>
+              <h2 class="section-title" id="tech-heading">
+                PRECISION <span class="stroke-light">ANATOMY.</span>
+              </h2>
+              <p class="tech-lead">
+                Click or scroll through our five core patents. Every tube
+                profile is computationally fluid-tested across 18 yaw angles.
+              </p>
+
+              <ol class="tech-list" id="tech-list">
+                <li class="tech-item active" data-tech="0" tabindex="0">
+                  <span class="tech-num">01</span>
+                  <div class="tech-item-body">
+                    <h3>Carbon T1100G Monocoque Frame</h3>
+                    <p>
+                      Latex bladder-molded Torayca fibers yield 680g raw frame
+                      weight with 24% higher bottom-bracket stiffness.
+                    </p>
+                  </div>
+                </li>
+                <li class="tech-item" data-tech="1" tabindex="0">
+                  <span class="tech-num">02</span>
+                  <div class="tech-item-body">
+                    <h3>Twin-Vortex Aero Fork</h3>
+                    <p>
+                      Truncated NACA airfoil blades channel turbulent wheel wake
+                      away from the downtube, saving 14 watts at 45 km/h.
+                    </p>
+                  </div>
+                </li>
+                <li class="tech-item" data-tech="2" tabindex="0">
+                  <span class="tech-num">03</span>
+                  <div class="tech-item-body">
+                    <h3>Smart Wireless 12-Speed Drivetrain</h3>
+                    <p>
+                      Sub-22ms algorithmic shift actuation with integrated
+                      dual-sided strain power meter accurate to ±0.8%.
+                    </p>
+                  </div>
+                </li>
+                <li class="tech-item" data-tech="3" tabindex="0">
+                  <span class="tech-num">04</span>
+                  <div class="tech-item-body">
+                    <h3>Cryo-Fin Ceramic Disc Brakes</h3>
+                    <p>
+                      160mm titanium-carrier rotors with directional cooling
+                      fins reduce thermal fade by 38% on alpine descents.
+                    </p>
+                  </div>
+                </li>
+                <li class="tech-item" data-tech="4" tabindex="0">
+                  <span class="tech-num">05</span>
+                  <div class="tech-item-body">
+                    <h3>Filament-Wound 60mm Carbon Wheelset</h3>
+                    <p>
+                      Internal titanium ratchet hubs laced with carbon aero
+                      spokes—1,240g pair weight with zero lateral flex.
+                    </p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+
+            <div class="tech-right">
+              <div class="tech-blueprint-card">
+                <div class="blueprint-top-bar">
+                  <span class="mono-label">CAD TELEMETRY // AXVEL-R01</span>
+                  <span class="mono-label accent-text" id="tech-active-badge"
+                    >01 · CARBON FRAME</span
+                  >
+                </div>
+
+                <div class="tech-svg-stage">
+                  <svg
+                    viewBox="0 0 640 380"
+                    class="tech-bike-svg"
+                    aria-label="AXVEL technical blueprint diagram"
+                  >
+                    <g stroke="rgba(127,214,255,0.08)" stroke-width="1">
+                      <line x1="0" y1="76" x2="640" y2="76" />
+                      <line x1="0" y1="152" x2="640" y2="152" />
+                      <line x1="0" y1="228" x2="640" y2="228" />
+                      <line x1="0" y1="304" x2="640" y2="304" />
+                      <line x1="128" y1="0" x2="128" y2="380" />
+                      <line x1="256" y1="0" x2="256" y2="380" />
+                      <line x1="384" y1="0" x2="384" y2="380" />
+                      <line x1="512" y1="0" x2="512" y2="380" />
+                    </g>
+
+                    <g class="wheel-spin" style="transform-origin: 150px 240px">
+                      <circle
+                        cx="150"
+                        cy="240"
+                        r="92"
+                        stroke="#7FD6FF"
+                        stroke-width="6"
+                        fill="none"
+                        stroke-opacity="0.6"
+                      />
+                      <circle
+                        cx="150"
+                        cy="240"
+                        r="76"
+                        stroke="#F6F1E7"
+                        stroke-width="1.5"
+                        stroke-dasharray="10 8"
+                        fill="none"
+                      />
+                      <line
+                        x1="150"
+                        y1="148"
+                        x2="150"
+                        y2="332"
+                        stroke="rgba(246,241,231,0.3)"
+                      />
+                      <line
+                        x1="58"
+                        y1="240"
+                        x2="242"
+                        y2="240"
+                        stroke="rgba(246,241,231,0.3)"
+                      />
+                    </g>
+                    <g class="wheel-spin" style="transform-origin: 490px 240px">
+                      <circle
+                        cx="490"
+                        cy="240"
+                        r="92"
+                        stroke="#7FD6FF"
+                        stroke-width="6"
+                        fill="none"
+                        stroke-opacity="0.6"
+                      />
+                      <circle
+                        cx="490"
+                        cy="240"
+                        r="76"
+                        stroke="#F6F1E7"
+                        stroke-width="1.5"
+                        stroke-dasharray="10 8"
+                        fill="none"
+                      />
+                      <line
+                        x1="490"
+                        y1="148"
+                        x2="490"
+                        y2="332"
+                        stroke="rgba(246,241,231,0.3)"
+                      />
+                      <line
+                        x1="398"
+                        y1="240"
+                        x2="582"
+                        y2="240"
+                        stroke="rgba(246,241,231,0.3)"
+                      />
+                    </g>
+
+                    <path
+                      d="M150 240 L236 142 L428 122 L285 244 Z"
+                      stroke="#F6F1E7"
+                      stroke-width="7"
+                      fill="rgba(255,107,44,0.08)"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M150 240 L285 244 L242 96"
+                      stroke="#FF6B2C"
+                      stroke-width="7"
+                      fill="none"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M418 102 L490 240"
+                      stroke="#7FD6FF"
+                      stroke-width="7"
+                      fill="none"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M210 92 L264 92"
+                      stroke="#F6F1E7"
+                      stroke-width="8"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M412 102 L454 94 C476 94 480 122 458 132"
+                      stroke="#F6F1E7"
+                      stroke-width="6.5"
+                      fill="none"
+                      stroke-linecap="round"
+                    />
+                    <circle
+                      cx="285"
+                      cy="244"
+                      r="22"
+                      stroke="#FFB36B"
+                      stroke-width="3"
+                      fill="#0B1020"
+                    />
+                  </svg>
+
+                  <button
+                    type="button"
+                    class="tech-hotspot active"
+                    data-hotspot="0"
+                    style="left: 52%; top: 36%"
+                    aria-label="Inspect 01 Carbon Frame"
+                  >
+                    <span>01</span>
+                  </button>
+                  <button
+                    type="button"
+                    class="tech-hotspot"
+                    data-hotspot="1"
+                    style="left: 71%; top: 47%"
+                    aria-label="Inspect 02 Aero Fork"
+                  >
+                    <span>02</span>
+                  </button>
+                  <button
+                    type="button"
+                    class="tech-hotspot"
+                    data-hotspot="2"
+                    style="left: 44.5%; top: 64%"
+                    aria-label="Inspect 03 Smart Drivetrain"
+                  >
+                    <span>03</span>
+                  </button>
+                  <button
+                    type="button"
+                    class="tech-hotspot"
+                    data-hotspot="3"
+                    style="left: 76.5%; top: 63%"
+                    aria-label="Inspect 04 Disc Brakes"
+                  >
+                    <span>04</span>
+                  </button>
+                  <button
+                    type="button"
+                    class="tech-hotspot"
+                    data-hotspot="4"
+                    style="left: 23.5%; top: 63%"
+                    aria-label="Inspect 05 Light Wheels"
+                  >
+                    <span>05</span>
+                  </button>
+                </div>
+
+                <div class="tech-readout" id="tech-readout">
+                  <h4 id="tech-readout-title">
+                    01. Carbon T1100G Monocoque Frame
+                  </h4>
+                  <p id="tech-readout-desc">
+                    High-modulus aerospace prepreg layup with 320 individual
+                    carbon pieces laser-cut for optimal torsional rigidity.
+                  </p>
+                </div>
+
+                <div class="tech-metrics-row">
+                  <div class="tech-metric">
+                    <strong class="metric-val"
+                      ><span data-count="680">680</span>g</strong
+                    >
+                    <span class="metric-lbl">Raw Frame Mass</span>
+                  </div>
+                  <div class="tech-metric">
+                    <strong class="metric-val"
+                      >-<span data-count="31">31</span>W</strong
+                    >
+                    <span class="metric-lbl">Drag Saved @ 45km/h</span>
+                  </div>
+                  <div class="tech-metric">
+                    <strong class="metric-val"
+                      >+<span data-count="24">24</span>%</strong
+                    >
+                    <span class="metric-lbl">BB Stiffness / Weight</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="cinematic-banner reveal"
+        id="cinematic"
+        aria-label="Born on the road brand film"
+      >
+        <div class="cinematic-media-wrap">
+          <video
+            src="./cycling-road.webm"
+            poster="https://images.unsplash.com/photo-1511994298241-608e28f14fde?auto=format&fit=crop&w=1600&q=80"
+            class="cinematic-img"
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="metadata"
+          ></video>
+          <div class="cinematic-scrim"></div>
+        </div>
+
+        <div class="container cinematic-content">
+          <p class="mono-label">
+            AXVEL ORIGINAL DOCUMENTARY · WORLDTOUR &amp; ALPINE
+          </p>
+          <h2 class="cinematic-title">Born on the road.</h2>
+          <p class="cinematic-sub">
+            Follow our WorldTour road peloton and alpine downhill test riders
+            during high-speed carbon prototype validation.
+          </p>
+          <button
+            type="button"
+            class="cinematic-play-btn"
+            id="open-video-btn"
+            aria-label="Play Born on the road documentary"
+          >
+            <span class="play-icon-circle">▶</span>
+            <span>Watch Cycling Film</span>
+          </button>
+        </div>
+      </section>
+
+      <section
+        class="section-cream why-section reveal"
+        id="why"
+        aria-labelledby="why-heading"
+      >
+        <div class="container">
+          <div class="section-head split-head">
+            <div>
+              <p class="mono-label dark-mono">04 / THE AXVEL STANDARD</p>
+              <h2 class="section-title dark-title" id="why-heading">
+                WHY <span class="stroke-dark">AXVEL.</span>
+              </h2>
+            </div>
+            <p class="section-sub dark-sub">
+              Direct-to-rider German &amp; Italian engineering. Every bicycle is
+              assembled by a single master mechanic and signed on the chainstay.
+            </p>
+          </div>
+
+          <div class="bento-grid">
+            <article class="bento-tile bento-wide">
+              <div class="bento-top">
+                <svg
+                  class="bento-icon"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  stroke="#FF6B2C"
+                  stroke-width="2.5"
+                >
+                  <path
+                    class="svg-draw"
+                    d="M6 34 C14 18, 26 18, 42 12 M6 26 C18 14, 30 22, 42 20 M6 40 L42 40"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <span class="bento-stat"
+                  ><span data-count="420">420</span> HRS</span
+                >
+              </div>
+              <h3>Sub-Millimeter Wind-Tunnel Validation</h3>
+              <p>
+                Every frame tube, cockpit flare, and bottle cage integration is
+                sculpted in our subterranean aero tunnel before a single carbon
+                mold is milled.
+              </p>
+            </article>
+
+            <article class="bento-tile">
+              <div class="bento-top">
+                <svg
+                  class="bento-icon"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  stroke="#0B1020"
+                  stroke-width="2.5"
+                >
+                  <polygon
+                    class="svg-draw"
+                    points="24 4 42 14 42 34 24 44 6 34 6 14"
+                    stroke-linejoin="round"
+                  />
+                  <circle cx="24" cy="24" r="6" stroke="#FF6B2C" />
+                </svg>
+                <span class="bento-stat"
+                  ><span data-count="0.1" data-decimals="1">0.1</span> MM</span
+                >
+              </div>
+              <h3>CT-Scanned Carbon Layup</h3>
+              <p>
+                Ultrasonic and X-ray inspection on 100% of frames eliminates
+                micro-voids and resin pooling.
+              </p>
+            </article>
+
+            <article class="bento-tile">
+              <div class="bento-top">
+                <svg
+                  class="bento-icon"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  stroke="#0B1020"
+                  stroke-width="2.5"
+                >
+                  <path
+                    class="svg-draw"
+                    d="M24 6 L38 12 V24 C38 33 24 41 24 41 C24 41 10 33 10 24 V12 Z"
+                    stroke-linejoin="round"
+                  />
+                  <polyline points="18 24 22 28 31 19" stroke="#FF6B2C" />
+                </svg>
+                <span class="bento-stat"
+                  ><span data-count="100">100</span>%</span
+                >
+              </div>
+              <h3>3-Year No-Fault Crash Cover</h3>
+              <p>
+                Race hard without hesitation. If you crash in an accredited
+                event or training ride, we replace your frameset free.
+              </p>
+            </article>
+
+            <article class="bento-tile bento-wide bento-dark-accent">
+              <div class="bento-top">
+                <svg
+                  class="bento-icon"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  stroke="#7FD6FF"
+                  stroke-width="2.5"
+                >
+                  <circle class="svg-draw" cx="24" cy="24" r="18" />
+                  <path
+                    d="M12 24 H36 M24 6 C29 12 29 36 24 42 C19 36 19 12 24 6 Z"
+                  />
+                </svg>
+                <span class="bento-stat"
+                  ><span data-count="48">48</span> HRS</span
+                >
+              </div>
+              <h3>Direct Factory Flight Box — Ready to Ride in 10 Minutes</h3>
+              <p>
+                Shipped directly from our assembly atelier in our patented
+                reusable AirVault case with digital torque wrench included.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section-ink configurator-section reveal"
+        id="build"
+        aria-labelledby="cfg-heading"
+      >
+        <div class="container">
+          <div class="section-head split-head">
+            <div>
+              <p class="mono-label">05 / BESPOKE ATELIER</p>
+              <h2 class="section-title" id="cfg-heading">
+                CUSTOM <span class="stroke-light">BUILDER.</span>
+              </h2>
+            </div>
+            <p class="section-sub">
+              Configure your AXVEL Aero RX SL. Frame finish, wheel profile, and
+              saddle spec recolor and re-calculate live.
+            </p>
+          </div>
+
+          <div class="cfg-layout" id="cfg-stage">
+            <div class="cfg-preview-panel">
+              <div class="cfg-preview-top">
+                <span class="mono-label" id="cfg-summary-tag"
+                  >AERO RX SL · TANGERINE IGNIS · 60MM CARBON</span
+                >
+                <div class="cfg-live-telemetry">
+                  <span>MASS: <strong id="cfg-weight">6.75 kg</strong></span>
+                  <span>AERO INDEX: <strong id="cfg-aero">99.2</strong></span>
+                </div>
+              </div>
+
+              <div class="cfg-svg-wrap">
+                <svg
+                  viewBox="0 0 640 360"
+                  class="cfg-bike-svg"
+                  aria-label="Live custom configured AXVEL bicycle"
+                >
+                  <ellipse
+                    cx="320"
+                    cy="332"
+                    rx="220"
+                    ry="10"
+                    fill="rgba(0,0,0,0.45)"
+                  />
+
+                  <g class="wheel-spin" style="transform-origin: 150px 230px">
+                    <circle
+                      cx="150"
+                      cy="230"
+                      r="94"
+                      stroke="#F6F1E7"
+                      stroke-width="9"
+                      fill="none"
+                    />
+                    <circle
+                      cx="150"
+                      cy="230"
+                      r="80"
+                      class="cfg-wheel-rim"
+                      stroke="var(--cfg-wheel, #1B2547)"
+                      stroke-width="var(--cfg-rim-w, 16)"
+                      fill="none"
+                    />
+                    <circle
+                      cx="150"
+                      cy="230"
+                      r="72"
+                      stroke="var(--cfg-frame, #FF6B2C)"
+                      stroke-width="2"
+                      stroke-dasharray="20 14"
+                      fill="none"
+                    />
+                    <g stroke="rgba(246,241,231,0.35)" stroke-width="1.3">
+                      <line x1="150" y1="136" x2="150" y2="324" />
+                      <line x1="56" y1="230" x2="244" y2="230" />
+                      <line x1="84" y1="164" x2="216" y2="296" />
+                      <line x1="216" y1="164" x2="84" y2="296" />
+                    </g>
+                    <circle
+                      cx="150"
+                      cy="230"
+                      r="18"
+                      stroke="#7FD6FF"
+                      stroke-width="2"
+                      fill="#0B1020"
+                    />
+                  </g>
+
+                  <g class="wheel-spin" style="transform-origin: 490px 230px">
+                    <circle
+                      cx="490"
+                      cy="230"
+                      r="94"
+                      stroke="#F6F1E7"
+                      stroke-width="9"
+                      fill="none"
+                    />
+                    <circle
+                      cx="490"
+                      cy="230"
+                      r="80"
+                      class="cfg-wheel-rim"
+                      stroke="var(--cfg-wheel, #1B2547)"
+                      stroke-width="var(--cfg-rim-w, 16)"
+                      fill="none"
+                    />
+                    <circle
+                      cx="490"
+                      cy="230"
+                      r="72"
+                      stroke="var(--cfg-frame, #FF6B2C)"
+                      stroke-width="2"
+                      stroke-dasharray="20 14"
+                      fill="none"
+                    />
+                    <g stroke="rgba(246,241,231,0.35)" stroke-width="1.3">
+                      <line x1="490" y1="136" x2="490" y2="324" />
+                      <line x1="396" y1="230" x2="584" y2="230" />
+                      <line x1="424" y1="164" x2="556" y2="296" />
+                      <line x1="556" y1="164" x2="424" y2="296" />
+                    </g>
+                    <circle
+                      cx="490"
+                      cy="230"
+                      r="18"
+                      stroke="#7FD6FF"
+                      stroke-width="2"
+                      fill="#0B1020"
+                    />
+                  </g>
+
+                  <path
+                    d="M150 218 L285 210 A22 22 0 1 1 285 254 L150 242 Z"
+                    stroke="#FFB36B"
+                    stroke-width="2.2"
+                    stroke-dasharray="6 4"
+                    fill="none"
+                    class="chain-motion"
+                  />
+                  <path
+                    d="M150 230 L236 132 L428 112 L285 234 Z"
+                    stroke="var(--cfg-frame, #FF6B2C)"
+                    stroke-width="12"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    fill="none"
+                  />
+                  <path
+                    d="M150 230 L285 234 L242 86"
+                    stroke="var(--cfg-frame, #FF6B2C)"
+                    stroke-width="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    fill="none"
+                  />
+                  <path
+                    d="M418 92 L490 230"
+                    stroke="var(--cfg-frame, #FF6B2C)"
+                    stroke-width="10"
+                    stroke-linecap="round"
+                    fill="none"
+                  />
+
+                  <line
+                    x1="242"
+                    y1="86"
+                    x2="235"
+                    y2="72"
+                    stroke="#F6F1E7"
+                    stroke-width="6"
+                  />
+                  <path
+                    d="M206 74 L264 74 C274 74 276 64 258 62 L218 62 C202 62 198 74 206 74 Z"
+                    fill="var(--cfg-saddle, #F6F1E7)"
+                  />
+                  <path
+                    d="M412 92 L450 82 C476 82 482 108 462 122 C450 130 438 126 436 118"
+                    stroke="var(--cfg-saddle, #F6F1E7)"
+                    stroke-width="7.5"
+                    stroke-linecap="round"
+                    fill="none"
+                  />
+
+                  <circle
+                    cx="285"
+                    cy="234"
+                    r="22"
+                    fill="#0B1020"
+                    stroke="#F6F1E7"
+                    stroke-width="3.5"
+                  />
+                  <circle
+                    cx="285"
+                    cy="234"
+                    r="7"
+                    fill="var(--cfg-frame, #FF6B2C)"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="cfg-controls-panel">
+              <div class="cfg-group">
+                <div class="cfg-group-head">
+                  <span class="mono-label">01. FRAME PIGMENT</span>
+                  <span class="cfg-selected-name" id="cfg-color-name"
+                    >Tangerine Ignis</span
+                  >
+                </div>
+                <div
+                  class="swatch-row"
+                  role="radiogroup"
+                  aria-label="Select frame color"
+                >
+                  <button
+                    type="button"
+                    class="color-swatch active"
+                    data-cfg-color="#FF6B2C"
+                    data-cfg-name="Tangerine Ignis"
+                    data-cfg-add="0"
+                    style="--sw: #ff6b2c"
+                    aria-label="Tangerine Ignis"
+                  ></button>
+                  <button
+                    type="button"
+                    class="color-swatch"
+                    data-cfg-color="#7FD6FF"
+                    data-cfg-name="Glacier Sky Metallic"
+                    data-cfg-add="180"
+                    style="--sw: #7fd6ff"
+                    aria-label="Glacier Sky Metallic"
+                  ></button>
+                  <button
+                    type="button"
+                    class="color-swatch"
+                    data-cfg-color="#F6F1E7"
+                    data-cfg-name="Dolomite Chalk Ivory"
+                    data-cfg-add="120"
+                    style="--sw: #f6f1e7"
+                    aria-label="Dolomite Chalk Ivory"
+                  ></button>
+                  <button
+                    type="button"
+                    class="color-swatch"
+                    data-cfg-color="#FFB36B"
+                    data-cfg-name="Solaris Amber Gold"
+                    data-cfg-add="240"
+                    style="--sw: #ffb36b"
+                    aria-label="Solaris Amber Gold"
+                  ></button>
+                  <button
+                    type="button"
+                    class="color-swatch"
+                    data-cfg-color="#9AA4C2"
+                    data-cfg-name="Titanium Raw Slate"
+                    data-cfg-add="150"
+                    style="--sw: #9aa4c2"
+                    aria-label="Titanium Raw Slate"
+                  ></button>
+                </div>
+              </div>
+
+              <div class="cfg-group">
+                <div class="cfg-group-head">
+                  <span class="mono-label">02. CARBON WHEELSET</span>
+                </div>
+                <div
+                  class="cfg-option-list"
+                  role="radiogroup"
+                  aria-label="Select wheelset"
+                >
+                  <button
+                    type="button"
+                    class="cfg-opt-btn active"
+                    data-cfg-wheel="#1B2547"
+                    data-cfg-rim="16"
+                    data-cfg-wname="60MM AERO CARBON"
+                    data-cfg-wadd="0"
+                    data-cfg-kg="6.75 kg"
+                    data-cfg-aero="99.2"
+                  >
+                    <span>Aero 60mm Deep Section</span>
+                    <strong>Included</strong>
+                  </button>
+                  <button
+                    type="button"
+                    class="cfg-opt-btn"
+                    data-cfg-wheel="#7FD6FF"
+                    data-cfg-rim="10"
+                    data-cfg-wname="38MM CLIMB ULTRALIGHT"
+                    data-cfg-wadd="450"
+                    data-cfg-kg="6.42 kg"
+                    data-cfg-aero="96.8"
+                  >
+                    <span>Climb 38mm Ceramic Ultralight</span>
+                    <strong>+$450</strong>
+                  </button>
+                  <button
+                    type="button"
+                    class="cfg-opt-btn"
+                    data-cfg-wheel="#FF6B2C"
+                    data-cfg-rim="22"
+                    data-cfg-wname="80MM TT VELODROME"
+                    data-cfg-wadd="720"
+                    data-cfg-kg="6.95 kg"
+                    data-cfg-aero="99.9"
+                  >
+                    <span>Velodrome 80mm Team Spec</span>
+                    <strong>+$720</strong>
+                  </button>
+                </div>
+              </div>
+
+              <div class="cfg-group">
+                <div class="cfg-group-head">
+                  <span class="mono-label">03. SADDLE &amp; TAPE</span>
+                </div>
+                <div
+                  class="cfg-option-list"
+                  role="radiogroup"
+                  aria-label="Select saddle"
+                >
+                  <button
+                    type="button"
+                    class="cfg-saddle-btn active"
+                    data-cfg-saddle="#F6F1E7"
+                    data-cfg-sname="Ivory Microtex 3D"
+                    data-cfg-sadd="0"
+                  >
+                    <span>Ivory 3D-Printed Lattice</span>
+                    <strong>Included</strong>
+                  </button>
+                  <button
+                    type="button"
+                    class="cfg-saddle-btn"
+                    data-cfg-saddle="#FF6B2C"
+                    data-cfg-sname="Tangerine Factory Team"
+                    data-cfg-sadd="160"
+                  >
+                    <span>Tangerine Factory Carbon</span>
+                    <strong>+$160</strong>
+                  </button>
+                  <button
+                    type="button"
+                    class="cfg-saddle-btn"
+                    data-cfg-saddle="#E9DFCC"
+                    data-cfg-sname="Sahara Raw Alcantara"
+                    data-cfg-sadd="190"
+                  >
+                    <span>Sahara Raw Alcantara</span>
+                    <strong>+$190</strong>
+                  </button>
+                </div>
+              </div>
+
+              <div class="cfg-footer">
+                <div class="cfg-price-block">
+                  <span class="mono-label">BESPOKE BUILD TOTAL</span>
+                  <strong class="cfg-total-price" id="cfg-price">$6,490</strong>
+                </div>
+                <button type="button" class="btn-primary" id="cfg-add-btn">
+                  <span>Add Build to Cart</span>
+                  <span>→</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section-cream stories-section reveal"
+        id="stories"
+        aria-labelledby="stories-heading"
+      >
+        <div class="container">
+          <div class="section-head split-head">
+            <div>
+              <p class="mono-label dark-mono">06 / DISPATCHES FROM THE ROAD</p>
+              <h2 class="section-title dark-title" id="stories-heading">
+                THE <span class="stroke-dark">JOURNAL.</span>
+              </h2>
+            </div>
+            <p class="section-sub dark-sub">
+              Long-form essays on alpine ascents, wind-tunnel telemetry, and
+              ultra-endurance expeditions.
+            </p>
+          </div>
+
+          <div class="stories-grid">
+            <article
+              class="story-card"
+              data-story-id="0"
+              tabindex="0"
+              role="button"
+              aria-label="Read story: Crossing the Dolomites at Dawn"
+            >
+              <div class="story-img-stage">
+                <img
+                  class="story-img-primary"
+                  src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=1200&q=80"
+                  alt="Cyclist climbing misty Dolomites switchbacks"
+                  loading="lazy"
+                  decoding="async"
+                  referrerpolicy="no-referrer"
+                  onerror="
+                    this.onerror = null;
+                    this.style.opacity = '0';
+                  "
+                />
+                <img
+                  class="story-img-secondary"
+                  src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1200&q=80"
+                  alt="Peloton descending alpine pass"
+                  loading="lazy"
+                  decoding="async"
+                  referrerpolicy="no-referrer"
+                  onerror="
+                    this.onerror = null;
+                    this.style.opacity = '0';
+                  "
+                />
+              </div>
+              <div class="story-meta">
+                <span>ALPINE EXPEDITION</span>
+                <span aria-hidden="true">·</span>
+                <span>6 MIN READ</span>
+              </div>
+              <h3 class="story-title">
+                Crossing the Passo Giau Before First Light: 4,800m on the Aero
+                RX
+              </h3>
+              <div class="story-link-row">
+                <span>Read Dispatch</span>
+                <span class="story-arrow">→</span>
+              </div>
+            </article>
+
+            <article
+              class="story-card"
+              data-story-id="1"
+              tabindex="0"
+              role="button"
+              aria-label="Read story: Inside the Subterranean Wind Tunnel"
+            >
+              <div class="story-img-stage">
+                <img
+                  class="story-img-primary"
+                  src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=1200&q=80"
+                  alt="Studio macro view of carbon road bicycle frame"
+                  loading="lazy"
+                  decoding="async"
+                  referrerpolicy="no-referrer"
+                  onerror="
+                    this.onerror = null;
+                    this.style.opacity = '0';
+                  "
+                />
+                <img
+                  class="story-img-secondary"
+                  src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=1200&q=80"
+                  alt="Carbon drop bars in wind tunnel test"
+                  loading="lazy"
+                  decoding="async"
+                  referrerpolicy="no-referrer"
+                  onerror="
+                    this.onerror = null;
+                    this.style.opacity = '0';
+                  "
+                />
+              </div>
+              <div class="story-meta">
+                <span>AERO ENGINEERING</span>
+                <span aria-hidden="true">·</span>
+                <span>8 MIN READ</span>
+              </div>
+              <h3 class="story-title">
+                Chasing 31 Watts: How Boundary-Layer Trip Strips Changed Our
+                Fork
+              </h3>
+              <div class="story-link-row">
+                <span>Read Dispatch</span>
+                <span class="story-arrow">→</span>
+              </div>
+            </article>
+
+            <article
+              class="story-card"
+              data-story-id="2"
+              tabindex="0"
+              role="button"
+              aria-label="Read story: Unbound Gravel 200 Miles in Kansas"
+            >
+              <div class="story-img-stage">
+                <img
+                  class="story-img-primary"
+                  src="https://images.unsplash.com/photo-1541625602330-2277a4c46182?auto=format&fit=crop&w=1200&q=80"
+                  alt="Gravel rider kicking up dust at golden hour"
+                  loading="lazy"
+                  decoding="async"
+                  referrerpolicy="no-referrer"
+                  onerror="
+                    this.onerror = null;
+                    this.style.opacity = '0';
+                  "
+                />
+                <img
+                  class="story-img-secondary"
+                  src="https://images.unsplash.com/photo-1544191696-102dbdaeeaa0?auto=format&fit=crop&w=1200&q=80"
+                  alt="Flint hills gravel track"
+                  loading="lazy"
+                  decoding="async"
+                  referrerpolicy="no-referrer"
+                  onerror="
+                    this.onerror = null;
+                    this.style.opacity = '0';
+                  "
+                />
+              </div>
+              <div class="story-meta">
+                <span>GRAVEL ULTRA</span>
+                <span aria-hidden="true">·</span>
+                <span>5 MIN READ</span>
+              </div>
+              <h3 class="story-title">
+                320 Kilometers of Flint &amp; Crosswinds on the Falcon GX Gravel
+              </h3>
+              <div class="story-link-row">
+                <span>Read Dispatch</span>
+                <span class="story-arrow">→</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section-ink testimonials-section reveal"
+        id="testimonials"
+        aria-labelledby="testi-heading"
+      >
+        <div class="container">
+          <div class="section-head split-head">
+            <div>
+              <p class="mono-label">07 / PRO &amp; PRIVATEER VOICES</p>
+              <h2 class="section-title" id="testi-heading">
+                RIDER <span class="stroke-light">VERDICT.</span>
+              </h2>
+            </div>
+            <div class="carousel-nav-btns">
+              <button
+                type="button"
+                class="icon-btn"
+                id="testi-prev"
+                aria-label="Previous testimonial"
+              >
+                ←
+              </button>
+              <button
+                type="button"
+                class="icon-btn"
+                id="testi-next"
+                aria-label="Next testimonial"
+              >
+                →
+              </button>
+            </div>
+          </div>
+
+          <div class="testi-carousel" id="testi-carousel">
+            <article class="testi-card">
+              <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>
+                “At 55 km/h in a crosswind, the Aero RX SL feels locked on
+                rails. I shaved 4 minutes off my Maratona dles Dolomites PR on
+                the first weekend.”
+              </blockquote>
+              <div class="testi-author">
+                <img
+                  src="4.jpg"
+                  alt="Elena Rostova"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                  onerror="
+                    this.onerror = null;
+                    this.style.opacity = '0';
+                  "
+                />
+                <div>
+                  <strong>Elena Rostova</strong>
+                  <span
+                    >Continental Pro Climber · Zurich · Rides Aero RX
+                    Carbon</span
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="testi-card">
+              <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>
+                “The Falcon GX cleared 48mm tires through Scottish highland bog
+                while still accelerating like a pure race road machine on
+                tarmac.”
+              </blockquote>
+              <div class="testi-author">
+                <img
+                  src="3.jpg"
+                  alt="Callum MacLeod"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                  onerror="
+                    this.onerror = null;
+                    this.style.opacity = '0';
+                  "
+                />
+                <div>
+                  <strong>Callum MacLeod</strong>
+                  <span
+                    >Transcontinental Finisher · Edinburgh · Rides Falcon GX
+                    Gravel</span
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="testi-card">
+              <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>
+                “I’ve owned Pinarello and Specialized S-Works frames. AXVEL’s
+                bottom-bracket snap and internal cockpit routing are in a league
+                of their own.”
+              </blockquote>
+              <div class="testi-author">
+                <img
+                  src="2.jpg"
+                  alt="Marcus Vance"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                  onerror="
+                    this.onerror = null;
+                    this.style.opacity = '0';
+                  "
+                />
+                <div>
+                  <strong>Marcus Vance</strong>
+                  <span
+                    >Aerospace Lead Engineer · Boulder · Rides Veloce SL
+                    Team</span
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="testi-card">
+              <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>
+                “The Volt E-Road weighs just 11.2 kg. Nobody in our Sunday group
+                ride realized it had a harmonic-pin motor until the 14% pitch.”
+              </blockquote>
+              <div class="testi-author">
+                <img
+                  src="1.jpg"
+                  alt="Sora Takahashi"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                  onerror="
+                    this.onerror = null;
+                    this.style.opacity = '0';
+                  "
+                />
+                <div>
+                  <strong>Sora Takahashi</strong>
+                  <span
+                    >Architectural Director · Tokyo · Rides Volt E-Road SL</span
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section-ink2 gallery-section reveal"
+        id="gallery"
+        aria-labelledby="gallery-heading"
+      >
+        <div class="container">
+          <div class="section-head split-head">
+            <div>
+              <p class="mono-label">08 / #AXVELWORLDWIDE</p>
+              <h2 class="section-title" id="gallery-heading">
+                THE <span class="stroke-light">PELOTON.</span>
+              </h2>
+            </div>
+            <p class="section-sub">
+              Captured by AXVEL riders from Cortina d'Ampezzo to Mallorca. Click
+              any frame to inspect in full-resolution lightbox.
+            </p>
+          </div>
+
+          <div class="masonry-gallery" id="masonry-gallery">
+            <figure
+              class="masonry-item"
+              data-lightbox-idx="0"
+              tabindex="0"
+              role="button"
+              aria-label="Open gallery photo: Passo Stelvio Switchbacks"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1000&q=80"
+                alt="Passo Stelvio Switchbacks"
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+                onerror="
+                  this.onerror = null;
+                  this.style.opacity = '0';
+                "
+              />
+              <figcaption>
+                <span>Passo dello Stelvio, IT</span><strong>@lukas.aero</strong>
+              </figcaption>
+            </figure>
+            <figure
+              class="masonry-item tall"
+              data-lightbox-idx="1"
+              tabindex="0"
+              role="button"
+              aria-label="Open gallery photo: Cap de Formentor Dawn"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=1000&q=80"
+                alt="Cap de Formentor Dawn"
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+                onerror="
+                  this.onerror = null;
+                  this.style.opacity = '0';
+                "
+              />
+              <figcaption>
+                <span>Cap de Formentor, ES</span><strong>@claire_veloce</strong>
+              </figcaption>
+            </figure>
+            <figure
+              class="masonry-item"
+              data-lightbox-idx="2"
+              tabindex="0"
+              role="button"
+              aria-label="Open gallery photo: Moab Slickrock Enduro"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1544191696-102dbdaeeaa0?auto=format&fit=crop&w=1000&q=80"
+                alt="Moab Slickrock Enduro"
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+                onerror="
+                  this.onerror = null;
+                  this.style.opacity = '0';
+                "
+              />
+              <figcaption>
+                <span>Moab Rim Trail, UT</span><strong>@diego.mtb</strong>
+              </figcaption>
+            </figure>
+            <figure
+              class="masonry-item tall"
+              data-lightbox-idx="3"
+              tabindex="0"
+              role="button"
+              aria-label="Open gallery photo: Strade Bianche Gravel"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1541625602330-2277a4c46182?auto=format&fit=crop&w=1000&q=80"
+                alt="Strade Bianche Gravel"
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+                onerror="
+                  this.onerror = null;
+                  this.style.opacity = '0';
+                "
+              />
+              <figcaption>
+                <span>Siena White Roads, IT</span><strong>@matteorossi</strong>
+              </figcaption>
+            </figure>
+            <figure
+              class="masonry-item"
+              data-lightbox-idx="4"
+              tabindex="0"
+              role="button"
+              aria-label="Open gallery photo: Tokyo Night Criterium"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=1000&q=80"
+                alt="Tokyo Night Criterium"
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+                onerror="
+                  this.onerror = null;
+                  this.style.opacity = '0';
+                "
+              />
+              <figcaption>
+                <span>Shibuya Loop, JP</span><strong>@kenji.watts</strong>
+              </figcaption>
+            </figure>
+            <figure
+              class="masonry-item"
+              data-lightbox-idx="5"
+              tabindex="0"
+              role="button"
+              aria-label="Open gallery photo: Col du Galibier Summit"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=1000&q=80"
+                alt="Col du Galibier Summit"
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+                onerror="
+                  this.onerror = null;
+                  this.style.opacity = '0';
+                "
+              />
+              <figcaption>
+                <span>Col du Galibier, FR</span><strong>@amelie.climbs</strong>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section-ink contact-section reveal"
+        id="contact"
+        aria-labelledby="contact-heading"
+      >
+        <div class="container">
+          <div class="contact-dual-grid">
+            <div class="newsletter-panel">
+              <p class="mono-label">09 / PRIVATE ATELIER DISPATCH</p>
+              <h2 class="giant-cta-title" id="contact-heading">
+                RIDE <span class="stroke-light">WITH US.</span>
+              </h2>
+              <p class="newsletter-copy">
+                Join
+                <strong class="accent-text"
+                  ><span data-count="120000">120,000</span>+</strong
+                >
+                riders receiving wind-tunnel whitepapers, limited team-issue
+                frame drops, and global clubhouse ride invites.
+              </p>
+
+              <form class="newsletter-form" id="newsletter-form" novalidate>
+                <div class="newsletter-input-row">
+                  <label for="nl-email" class="sr-only">Email address</label>
+                  <input
+                    type="email"
+                    id="nl-email"
+                    placeholder="Enter your email (e.g. rider@axvel.com)"
+                    required
+                    aria-label="Email address for newsletter"
+                  />
+                  <button type="submit" class="btn-primary">
+                    <span>Join Club</span>
+                  </button>
+                </div>
+                <p
+                  class="form-feedback"
+                  id="nl-feedback"
+                  role="status"
+                  aria-live="polite"
+                ></p>
+                <div
+                  class="confetti-stage"
+                  id="confetti-stage"
+                  aria-hidden="true"
+                ></div>
+              </form>
+
+              <div class="atelier-locations">
+                <div>
+                  <span class="mono-label">EUROPE HQ</span>
+                  <strong>Cortina d'Ampezzo · Via Olimpia 14</strong>
+                </div>
+                <div>
+                  <span class="mono-label">NORTH AMERICA LAB</span>
+                  <strong>Boulder, CO · Pearl Street 840</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form-panel">
+              <h3 class="panel-heading">Book a Private Bike Fit or Inquiry</h3>
+              <form class="contact-form" id="contact-form" novalidate>
+                <div class="float-field">
+                  <input
+                    type="text"
+                    id="cf-name"
+                    placeholder=" "
+                    required
+                    minlength="2"
+                  />
+                  <label for="cf-name">Full Name *</label>
+                  <span class="field-error" id="err-name"
+                    >Please enter your name (min 2 chars).</span
+                  >
+                </div>
+
+                <div class="float-row">
+                  <div class="float-field">
+                    <input
+                      type="email"
+                      id="cf-email"
+                      placeholder=" "
+                      required
+                    />
+                    <label for="cf-email">Email Address *</label>
+                    <span class="field-error" id="err-email"
+                      >Enter a valid email address.</span
+                    >
+                  </div>
+                  <div class="float-field">
+                    <input
+                      type="tel"
+                      id="cf-phone"
+                      placeholder=" "
+                      required
+                      pattern="[0-9+\-\s()]{7,}"
+                    />
+                    <label for="cf-phone">Phone Number *</label>
+                    <span class="field-error" id="err-phone"
+                      >Enter a valid 7+ digit phone number.</span
+                    >
+                  </div>
+                </div>
+
+                <div class="float-field">
+                  <textarea
+                    id="cf-msg"
+                    rows="3"
+                    placeholder=" "
+                    required
+                    minlength="10"
+                  ></textarea>
+                  <label for="cf-msg"
+                    >Frame Size, Discipline or Question *</label
+                  >
+                  <span class="field-error" id="err-msg"
+                    >Please write at least 10 characters.</span
+                  >
+                </div>
+
+                <button type="submit" class="btn-primary full-w">
+                  <span>Transmit to Master Builder</span>
+                  <span>→</span>
+                </button>
+                <p
+                  class="form-feedback"
+                  id="cf-feedback"
+                  role="status"
+                  aria-live="polite"
+                ></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="footer">
+      <div class="container">
+        <div class="footer-top-grid">
+          <div class="footer-brand-col">
+            <p class="mono-label">AXVEL PERFORMANCE BICYCLES</p>
+            <p class="footer-tagline">
+              Ride Beyond Limits. Hand-built carbon machines engineered for
+              velocity, altitude, and exploration.
+            </p>
+            <div class="footer-socials">
+              <a href="#hero" aria-label="AXVEL Instagram">IG</a>
+              <a href="#hero" aria-label="AXVEL Strava Club">ST</a>
+              <a href="#hero" aria-label="AXVEL YouTube">YT</a>
+              <a href="#hero" aria-label="AXVEL X">X</a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Disciplines</h4>
+            <ul>
+              <li>
+                <a href="#bikes" data-cat-select="Road"
+                  >Road Aero &amp; Climb</a
+                >
+              </li>
+              <li>
+                <a href="#bikes" data-cat-select="Gravel">Gravel Adventure</a>
+              </li>
+              <li>
+                <a href="#bikes" data-cat-select="Mountain">Mountain Enduro</a>
+              </li>
+              <li>
+                <a href="#bikes" data-cat-select="Electric">Electric Stealth</a>
+              </li>
+              <li>
+                <a href="#bikes" data-cat-select="Kids">Kids Junior Pro</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Engineering</h4>
+            <ul>
+              <li><a href="#tech">Carbon T1100G Layup</a></li>
+              <li><a href="#tech">Dolomites Wind Tunnel</a></li>
+              <li><a href="#build">Bespoke Configurator</a></li>
+              <li><a href="#why">3-Year Crash Warranty</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Rider Care</h4>
+            <ul>
+              <li><a href="#contact">Private Retül Sizing</a></li>
+              <li><a href="#stories">Factory Journal</a></li>
+              <li><a href="#gallery">Global Clubhouses</a></li>
+              <li><a href="#contact">Direct Dispatch FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-ride-track">
+          <div class="track-line">
+            <svg class="mini-rider-bike" viewBox="0 0 64 36" aria-hidden="true">
+              <circle
+                cx="14"
+                cy="24"
+                r="9"
+                fill="none"
+                stroke="#FF6B2C"
+                stroke-width="2.5"
+              />
+              <circle
+                cx="50"
+                cy="24"
+                r="9"
+                fill="none"
+                stroke="#F6F1E7"
+                stroke-width="2.5"
+              />
+              <path
+                d="M14 24 L26 10 L44 10 L30 24 Z M44 10 L50 24"
+                fill="none"
+                stroke="#FF6B2C"
+                stroke-width="2.5"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <button
+            type="button"
+            class="back-top-btn"
+            id="back-to-top"
+            aria-label="Back to top"
+          >
+            <span>BACK TO SUMMIT ↑</span>
+          </button>
+        </div>
+
+        <div class="footer-giant-word" aria-hidden="true">AXVEL</div>
+
+        <div class="footer-bottom">
+          <span>© 2026 AXVEL CYCLING GMBH. ALL RIGHTS RESERVED.</span>
+          <span>DESIGNED FOR AWWWARDS SOTY · ZERO COMPROMISE</span>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="modal-backdrop"
+      id="quick-view-modal"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="qv-title"
+    >
+      <div class="modal-card qv-card">
+        <button
+          type="button"
+          class="modal-close"
+          id="qv-close"
+          aria-label="Close Quick View"
+        >
+          ✕
+        </button>
+        <div class="qv-grid">
+          <div class="qv-image-stage">
+            <span class="qv-badge" id="qv-tag">NEW</span>
+            <img
+              id="qv-img"
+              src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=1200&q=80"
+              alt="Selected bicycle preview"
+              referrerpolicy="no-referrer"
+            />
+          </div>
+
+          <div class="qv-details">
+            <span class="mono-label" id="qv-cat">ROAD SERIES</span>
+            <h3 class="qv-title" id="qv-title">Aero RX Carbon</h3>
+            <div class="qv-price-row">
+              <strong class="qv-price" id="qv-price">$5,890</strong>
+              <span class="qv-rating" id="qv-rating">★ 4.9</span>
+            </div>
+
+            <div class="qv-option-block">
+              <span class="mono-label">FINISH HUE</span>
+              <div class="qv-dots" id="qv-dots">
+                <button
+                  type="button"
+                  class="qv-dot active"
+                  data-hue="0deg"
+                  style="background: #ff6b2c"
+                  aria-label="Tangerine finish"
+                ></button>
+                <button
+                  type="button"
+                  class="qv-dot"
+                  data-hue="175deg"
+                  style="background: #7fd6ff"
+                  aria-label="Glacier Cyan finish"
+                ></button>
+                <button
+                  type="button"
+                  class="qv-dot"
+                  data-hue="45deg"
+                  style="background: #ffb36b"
+                  aria-label="Solar Amber finish"
+                ></button>
+                <button
+                  type="button"
+                  class="qv-dot"
+                  data-hue="290deg"
+                  style="background: #9aa4c2"
+                  aria-label="Stealth Slate finish"
+                ></button>
+              </div>
+            </div>
+
+            <div class="qv-option-block">
+              <span class="mono-label">FRAME SIZE</span>
+              <div class="qv-sizes" id="qv-sizes">
+                <button type="button" class="size-btn" data-size="S (51)">
+                  S (51)
+                </button>
+                <button
+                  type="button"
+                  class="size-btn active"
+                  data-size="M (54)"
+                >
+                  M (54)
+                </button>
+                <button type="button" class="size-btn" data-size="L (56)">
+                  L (56)
+                </button>
+                <button type="button" class="size-btn" data-size="XL (58)">
+                  XL (58)
+                </button>
+              </div>
+            </div>
+
+            <dl class="qv-specs">
+              <div>
+                <dt>Frame</dt>
+                <dd id="qv-spec-frame">Torayca T1100G Carbon</dd>
+              </div>
+              <div>
+                <dt>Weight</dt>
+                <dd id="qv-spec-weight">6.8 kg</dd>
+              </div>
+              <div>
+                <dt>Gears</dt>
+                <dd id="qv-spec-gears">12-Speed Wireless Electronic</dd>
+              </div>
+              <div>
+                <dt>Brakes</dt>
+                <dd id="qv-spec-brakes">Hydraulic Ceramic Disc 160mm</dd>
+              </div>
+              <div>
+                <dt>Wheels</dt>
+                <dd id="qv-spec-wheels">AXVEL 55mm Carbon Tubeless</dd>
+              </div>
+            </dl>
+
+            <div class="qv-actions">
+              <div class="qty-stepper" aria-label="Quantity selector">
+                <button
+                  type="button"
+                  id="qv-qty-minus"
+                  aria-label="Decrease quantity"
+                >
+                  −
+                </button>
+                <span id="qv-qty-val">1</span>
+                <button
+                  type="button"
+                  id="qv-qty-plus"
+                  aria-label="Increase quantity"
+                >
+                  +
+                </button>
+              </div>
+              <button type="button" class="btn-primary flex-1" id="qv-add-btn">
+                <span>Add to Bag</span>
+                <span>→</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="drawer-backdrop" id="cart-backdrop" aria-hidden="true"></div>
+    <aside
+      class="cart-drawer"
+      id="cart-drawer"
+      aria-label="Shopping Bag"
+      aria-hidden="true"
+    >
+      <div class="cart-header">
+        <div>
+          <span class="mono-label">DIRECT FACTORY DISPATCH</span>
+          <h3>Your Riding Bag (<span id="cart-drawer-count">0</span>)</h3>
+        </div>
+        <button
+          type="button"
+          class="modal-close"
+          id="cart-close-btn"
+          aria-label="Close bag"
+        >
+          ✕
+        </button>
+      </div>
+
+      <div class="shipping-bar-wrap">
+        <p id="shipping-msg">
+          Add <strong>$2,500</strong> for complimentary AirVault global freight
+        </p>
+        <div class="shipping-track">
+          <div class="shipping-fill" id="shipping-fill" style="width: 0%"></div>
+        </div>
+      </div>
+
+      <div class="cart-items" id="cart-items"></div>
+
+      <div class="cart-footer">
+        <div class="cart-subtotal-row">
+          <span>SUBTOTAL</span>
+          <strong id="cart-subtotal">$0</strong>
+        </div>
+        <button type="button" class="btn-primary full-w" id="checkout-btn">
+          <span>Proceed to Direct Checkout</span>
+          <span>→</span>
+        </button>
+        <p
+          class="checkout-status"
+          id="checkout-status"
+          role="status"
+          aria-live="polite"
+        ></p>
+      </div>
+    </aside>
+
+    <div
+      class="modal-backdrop"
+      id="video-modal"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="vid-title"
+    >
+      <div class="modal-card video-modal-card">
+        <div class="video-modal-bar">
+          <span class="mono-label" id="vid-title"
+            >AXVEL FILM // 01. WORLDTOUR PELOTON SPRINT</span
+          >
+          <div class="video-chapter-pills">
+            <button
+              type="button"
+              class="vid-pill active"
+              data-vid-src="./cycling-road.webm"
+              data-vid-title="AXVEL FILM // 01. WORLDTOUR PELOTON SPRINT"
+            >
+              01. Road Race
+            </button>
+            <button
+              type="button"
+              class="vid-pill"
+              data-vid-src="./cycling-mtb.webm"
+              data-vid-title="AXVEL FILM // 02. ALPINE DOWNHILL MTB"
+            >
+              02. Downhill MTB
+            </button>
+          </div>
+          <button
+            type="button"
+            class="modal-close"
+            id="video-close"
+            aria-label="Close film modal"
+          >
+            ✕
+          </button>
+        </div>
+        <div class="video-player-stage">
+          <video
+            id="brand-video"
+            controls
+            playsinline
+            preload="metadata"
+            poster="https://images.unsplash.com/photo-1511994298241-608e28f14fde?auto=format&fit=crop&w=1400&q=80"
+            src="./cycling-road.webm"
+          >
+            <source src="./cycling-road.webm" type="video/webm" />
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal-backdrop"
+      id="lightbox-modal"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Community gallery lightbox"
+    >
+      <div class="lightbox-card">
+        <button
+          type="button"
+          class="modal-close"
+          id="lb-close"
+          aria-label="Close lightbox"
+        >
+          ✕
+        </button>
+        <button
+          type="button"
+          class="lb-nav lb-prev"
+          id="lb-prev"
+          aria-label="Previous image"
+        >
+          ←
+        </button>
+        <figure class="lb-figure">
+          <img
+            id="lb-img"
+            src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1400&q=80"
+            alt="Gallery full view"
+            referrerpolicy="no-referrer"
+          />
+          <figcaption id="lb-caption">
+            Passo dello Stelvio, IT — @lukas.aero
+          </figcaption>
+        </figure>
+        <button
+          type="button"
+          class="lb-nav lb-next"
+          id="lb-next"
+          aria-label="Next image"
+        >
+          →
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="modal-backdrop"
+      id="story-modal"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="sm-title"
+    >
+      <div class="modal-card story-modal-card">
+        <button
+          type="button"
+          class="modal-close"
+          id="sm-close"
+          aria-label="Close article"
+        >
+          ✕
+        </button>
+        <span class="mono-label" id="sm-meta"
+          >ALPINE EXPEDITION · 6 MIN READ</span
+        >
+        <h3 class="sm-title" id="sm-title">
+          Crossing the Passo Giau Before First Light
+        </h3>
+        <div class="sm-body" id="sm-body"></div>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
